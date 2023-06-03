@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="video.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+<style>
+    *{
+        font-family: 'Roboto', sans-serif;
+        color: white;
+    }
+    .video-details{
+        color: white;
+    }
+    .root-container{
+        display: grid;
+        grid-template-columns: 5fr 2fr;
+    }
+    #comments-container{
+        /* border: 1px solid red; */
+        max-height: 100vh;
+        overflow-y: scroll;
+        background-color: #3e3a3a7a;
+        
+    }
+</style>
+</head>
+<body>
+   
+    <section class="root-container">
+        <div>
+            <div id="loadVideo"></div>
+            <section>
+                <p id="title"></p>
+                <div class="video-details"></div>
+            </section>
+        </div>
+            <div id="comments-container">
+                <div class="comment">
+                    <!-- <img src="" alt="">
+                    <div class="comment-right-half">
+                        <b>Aravind</b>
+                        <p>some comment here is</p>
+                        <div class="options">
+                            <div style="display: flex; gap: 20px;">
+                                <div class="like">
+                                    <span class="material-symbols-outlined">
+                                        thumb_up
+                                        </span>
+                                    <span>20</span>
+                                </div>
+                                <div class="like">
+                                    <span class="material-symbols-outlined">
+                                        thumb_down
+                                        </span>
+                                </div>
+                                <button class="reply">
+                                    Replies
+                                </button>
+
+                            </div>
+                        </div> -->
+                        <div class="comment-reply comment">
+                            <!-- <img src="" alt="">
+                            <div class="comment-right-half">
+                                <b>Aravind</b>
+                                <p>some comment here is</p>
+                                <div class="options">
+                                    <div style="display: flex; gap: 20px;">
+                                        <div class="like">
+                                            <span class="material-symbols-outlined">
+                                                thumb_up
+                                                </span>
+                                            <span>20</span>
+                                        </div>
+                                        <div class="like">
+                                            <span class="material-symbols-outlined">
+                                                thumb_down
+                                                </span>
+                                        </div>
+                                        
+        
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                </div>
+
+            </div>
+        
+    </section>
+
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="video.js"></script>
+</body>
+</html>
